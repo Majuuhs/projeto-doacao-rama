@@ -1,0 +1,76 @@
+<!DOCTYPE html><!--declaração do tipo de documento-->
+<html lang="pt-br"><!--documento-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css"><!--lincar um documento com o outro-->
+    <title>Doação Ramacrisna</title><!--título-->
+</head>
+<header> <div class="div-header">
+    <img src="/public/img/logo2.png" alt="" width="130px"><!--seleciona uma imagem selva na pasta public para refleti-la-->
+    <ul class="navegacao"><!--lista desordenada-->
+        <li class="a"><a href="">Quem Somos</a></li><!--lista-->
+        <li class="a"><a href="">Objetivo</a></li><!--lista-->
+        <li class="a"><a href="">Quero Doar</a></li><!--lista-->
+        <li class="a"><a href="">Saiba Mais</a></li><!--lista-->
+    </ul><!--lista desordenada-->
+</div>
+</header>
+
+<body><!--corpo-->
+    <div class="formulario">
+        <form action="" method="post">
+            <h2>Quero Doar!</h2><!--Cabeçalho-->
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+                <input class="form-info-campo" type="text" placeholder="Nome do doador" id="nome" name="nome"
+                    required><br> <br>
+                <input class="form-info-campo" type="email" placeholder="E-mail ou Telefone" id="email" name="email"
+                    required><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Tipo de doação:</legend>
+                <label for="servicos">Dispositivo:</label>
+                <select class="form-info-campo" id="servicos" name="servicos" required>
+                    <option value="notebook">Notebook</option><!---->
+                    <option value="computador">Computador</option>
+                    <option value="outras">Outras peças</option>
+                </select><br><br>
+            </fieldset>
+
+            <fieldset>
+                <label>Forma de envio:</label><br>
+                <input type="radio" id="correio" name="envio" value="correio" required>
+                <label for="correio">Correio</label><br>
+                <div class="form-info-campo-row">
+                    <input type="radio" id="Entrega" name="envio" value="entrega" required>
+                    <label for="entrega">Entrega na instituição</label>
+                    <button class="Btn">
+                        <span class='span'>?</span>
+                        <span class="tooltip">Consultar entereço no rodapé</span>
+                    </button>
+                </div>
+                <div class="form-info-campo-row">
+                    <input type="radio" id="marcar" name="envio" value="marcar" required>
+                    <label for="marca">Marcar local de retirada com instituição</label><br><br>
+                    <button class="Btn">
+                        <span class='span'>?</span>
+                        <span class="tooltip">Entre em contato pelo nosso numero</span>
+                    </button>
+                </div>
+            </fieldset>
+
+            <fieldset class="set-obs">
+                <legend>Observações</legend>
+                <label for="obs">Informações sobre o dispositivo:</label>
+                <textarea name="obs" id="obs" cols="26" rows="2"></textarea><br>
+            </fieldset>
+
+            <input class="button" type="submit" value="Doar">
+        </form>
+    </div>
+</body><!--corpo-->
+
+</html>
