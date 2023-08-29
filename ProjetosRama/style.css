@@ -46,6 +46,25 @@ ul, li, a{
     margin: 0;
     font-weight: bold;
 }
+/* Objetivos*/
+.quem-somos{
+    width: 60vw;
+}
+.quem-somos hr{
+    margin: 21px 0 0;
+    width: 30px;
+    border: 2px solid #FF5236;
+    border-radius: 6px;
+}
+.quem-somos h2{
+    font-size: 45px;
+    color: #66798D;
+    margin: 0;
+    font-weight: bold;
+}
+.quem-somos p{
+    font-size: 24px;
+}
 .quem-somos p{
     font-size: 24px;
 }
